@@ -1,0 +1,218 @@
+body{
+    margin-top: 50px;
+margin-bottom: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align:center;
+    
+}
+
+.page {  
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+strong{
+    color: black;
+}
+
+
+
+header{
+    text-align: center;
+}
+
+.logo img{
+    
+        width: 70px;
+        height: 20px;
+        margin-bottom: 10px;
+    
+}
+
+h1
+{
+    color: rgb(173, 173, 173);
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+header p{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    justify-content: center;
+
+  }
+  .logo img{
+
+    width: 70px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+article img{
+    width: 500px;
+    height: 300px;
+}
+
+
+
+    
+
+    #display p{
+        margin-left: 150px;
+        color: blue;
+    }
+    #dis{
+        
+        color: red;
+        margin-left: -22px;
+
+    }
+
+
+
+.ema{
+    border-style: solid;
+    border-radius: 20px;
+    width: 340px;
+    height: 40px;
+    border-color: rgb(228, 226, 226);
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+    text-indent: 20px;
+
+}
+::placeholder{
+    color: rgb(223, 223, 198);
+}
+
+
+.sub{
+    background-color: rgb(29, 29, 207);
+    border-style: solid;
+    font-size: 12px;
+    border-radius: 20px;
+    border-color:rgb(29, 29, 207);
+    width: 150px;
+    height: 40px;
+    color: white;
+      }
+
+.sub:hover{
+        background-color: rgb(113, 128, 238);
+        border-style: solid;
+        border-radius: 20px;
+        border-color:rgb(128, 140, 228);
+        width: 150px;
+        height: 40px;
+        color: white;
+          }
+
+        .footer a:hover {
+            
+            border-radius: 50%;
+            background-color: blue;
+            color: white;
+            font-size: 22px;
+            border-width: 5px;
+            border-color: blue;
+           
+    
+    
+        }
+        .footer a{
+            
+            border-radius: 50px 50px 50px 50px;
+            font-size: 22px;
+            border-style: solid;
+            border-color: rgb(252, 252, 252);
+            color: blue;
+            border-width: thick;
+        }
+        
+        .footer p{
+            color: rgb(173, 173, 173);
+            font-family: sans-serif;
+        }
+        
+        @media only screen and (max-width: 490px) {
+            body {
+              flex-direction: column;
+              
+              max-width: 375px;
+        
+            }
+            .page {
+                display: flex;
+                flex-direction: column;
+                max-width: 375px;
+                align-items: center;
+                justify-content: center;
+                
+            
+              }
+            .logo img{
+            
+                width: 70px;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+        
+            .ema{
+            border-style: solid;
+            border-radius: 20px;
+            width: 300px;
+            height: 40px;
+            border-color: rgb(228, 226, 226);
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 20px;
+            text-indent: 20px;
+            }
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 12px;
+            }
+        
+            article img{
+                width: 300px;
+            }
+        
+            .sub{
+                background-color: rgb(29, 29, 207);
+                border-style: solid;
+                font-size: 12px;
+                border-radius: 20px;
+                border-color:rgb(29, 29, 207);
+                width: 300px;
+                height: 40px;
+                color: white;
+                  }
+            
+            .sub:hover{
+                    background-color: rgb(113, 128, 238);
+                    border-style: solid;
+                    border-radius: 20px;
+                    border-color:rgb(128, 140, 228);
+                    width: 300px;
+                    height: 40px;
+                    color: white;
+                      }
+
+                      #dis{
+                          margin: 0px;
+                      }
+            
+        
+            }
