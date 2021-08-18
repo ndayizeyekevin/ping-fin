@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping-coming-soon-page-starter-main</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Libre+Franklin">
+    <script>
+        function validation()
+        {
+           
+            var mymail=document.forms["myform"]["mails"].value;
+            var at=mymail.indexOf("@");
+            var dot=mymail.indexOf(".")+1;
+            var leng=mymail.length;
+            var diff=leng-dot;
+            
+            if(mymail=="")
+            {
+                document.getElementById("dis").innerHTML="Whoops! It looks like you forgot to add your email";;
+                var border=document.getElementsByClassName("ema")[0];
+                border.style.borderColor="red";
+                var out=document.getElementById("dis");
+                out.style.color="red";
+                return false;
+            }
+            else if(at>3 && (diff==2 || diff==3))
+            {
+                /*window.location.reload(true);
+            alert("Thanks for subscribing! You will receive a confirmation email soon!");*/
+            var border=document.getElementsByClassName("ema")[0];
+            border.style.borderColor="blue";
+            var out=document.getElementById("dis");
+            out.style.color="blue";
+            out.style.fontSize=20;
+            document.getElementById("dis").innerHTML="Thanks for subscribing! You will receive a confirmation email soon!";
+             return false;
+            }
+            else
+            {
+            document.getElementById("dis").innerHTML="Please provide a valid email address";
+            var border=document.getElementsByClassName("ema")[0];
+            border.style.borderColor="red";
+            var out=document.getElementById("dis");
+                out.style.color="red";
+            //alert("Enter a valid email");
+             return false;
+            }
+            
+            
+            
+        // alert(leng);
+                 
+           
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.svg" alt=""></div>
+        <h1>We are launching <strong>soon!</strong></h1>
+        <p class="pop">Subscribe and get notified</p>
+    </header>
+    <div class="page">    <article>
+        <form action="" method="POST" name="myform" onsubmit="return validation();">
+            <input class="ema" type="text" name="mails" placeholder="Your email adress">
+            <input class="sub" type="submit" name="sub" value="Notify Me">
+            <p id="dis"></p>
+        </form>
+        <img src="images/illustration-dashboard.png" alt="">
+
+    </article>
+    <footer class="footer">
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+       <p>&copy; Copyright Ping. All rights reserved.</p>
+    
+        
+    </footer>
+</div>
+
+    
+</body>
+</html>
